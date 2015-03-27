@@ -16,6 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ShowActivity"></activity>
+        <provider
+            android:authorities="com.example.krishnateja.junittestingandcontentproviders"
+            android:name=".data.UserProvider"
+            android:exported="false"
+            android:syncable="true" />
     </application>
 
 </manifest>

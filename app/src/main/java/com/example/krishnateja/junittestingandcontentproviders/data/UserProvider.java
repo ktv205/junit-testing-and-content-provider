@@ -37,7 +37,9 @@ public class UserProvider extends ContentProvider {
 
     @Override
     public boolean onCreate() {
-        return false;
+
+        mOpenHelper = new FriendsDataBaseHelper(getContext(),FriendsDataBaseHelper.DATABASE_NAME,null,FriendsDataBaseHelper.DATABASE_VERSION);
+        return true;
     }
 
     @Override
